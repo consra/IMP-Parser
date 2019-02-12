@@ -1,0 +1,9 @@
+ANTLR
+Raducanu Constantin 336CB
+
+Implementare
+	Partea de bonus a fost destul de usoara dupa ce m-am prins cum functioneaza antlr-ul
+plus ca acesta permitea si recursivitate (ceea ce mi se pare genial). M-am folosit destul de mult
+de gramatica oferita in enuntul temei pe care am schimbat-o putin totusi. In MyVisitor am creat o metoda
+pentru fiecare nod specificat in enuntul temei, care are ca scop sa afiseze tipul de nod si
+sa apeleze visit si pe copiii lui in cazul in care nu este node frunza.
