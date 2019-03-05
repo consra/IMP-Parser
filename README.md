@@ -10,14 +10,14 @@ Example of input code (IMP language):
 
  ```c
  int i, j, k;
-    i = 0;
-    j = 12;
-    while (!(i > 7)) {
-	      if (j > 20) {
-		    j = j + k;
-	      } else {
+i = 0;
+j = 12;
+while (!(i > 7)) {
+	if (j > 20) {
+		j = j + k;
+	} else {
 		j = j + 1;
 	}
 	i = i + 1;
-    }
+}
   ``` 
