@@ -8,8 +8,9 @@ The project consists mainly of 2 parts:
   
 Example of input code (IMP language):
 
- ```int i, j, k;```
-    ~~~~i = 0;
+ ```c
+ int i, j, k;
+    i = 0;
     j = 12;
     while (!(i > 7)) {
 	      if (j > 20) {
@@ -18,4 +19,5 @@ Example of input code (IMP language):
 		j = j + 1;
 	}
 	i = i + 1;
-    }~~~~
+    }
+  ``` 
