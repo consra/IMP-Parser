@@ -1,21 +1,6 @@
 JFLEX 
 Raducanu Constantin 336CB
 
-Impresii tema:
-	A fost o tema foarte interesanta si chiar m-am distrat in timp ce am 
-realizat-o, dar mi-a luat destul de mult timp. 
-
-Implementare:
-Pentru fiecare tip de node posibil am creat cate o clasa care implementa interfata Expression, 
-iar fiecare clasa care implementa aceasta interfata avea tipul ei si puteam sa fac metodele 
-sa fie cat mai flexibile. Pentru partea  de parsarea fiecare clasa creata are metoda show, 
-care afiseaza continutul ei propriu si are grija sa apeleze si show-ul copiilor pe care i-a retinut,
- in cazul in care nu este nod frunza. Asemanator cu o parcurge DFS pe arbore chiar. 
-	Partea de interpretare se realizeaza cu ajutor metodei interpret care este destul de asemanatoare
-ca logica cu metoda de show de la pasul anterior, doar ca acum doar interpreteaza in functie de tipul
-de nod si apeleaza recursiv si interpretul copiilor. 
-	La partea de lexer m-au ajutat gramatica data in enuntul temei, dar la partea de parser nu prea
-au fost de folos pentru ca jflex nu permite recursivitate :(. Mi-am dat seama ca exista niste simboluri cheie 
-care m-ar ajuta sa restrang stiva, precum ';', adica eu puneam orice primeam pe stiva pana gaseam un simbol precum
-';' si incepeam sa restrang pana gaseam simbolul '='. Iar prin restrangere ma refer ca toate obiectele create si puse pe
-stiva erau inserate in unul singur, care sa le continea pe toate sub forma de arbore.
+#Setup 
+In order to run the project, you need to use the command make and make run, but first write your IMP code in a file named 
+**input**. The output file will be called **arbore**.
