@@ -9,22 +9,20 @@ The project consists mainly of 2 parts:
 Example of input code (IMP language):
 
  ```c
- int i, j, k;
+int i, j;
 i = 0;
 j = 12;
 while (!(i > 7)) {
-	if (j > 20) {
+	if (i > 8) {
 		j = j + k;
-	} else {
-		j = j + 1;
-	}
+	} else {}
 	i = i + 1;
 }
   ``` 
  # Parse Phase
  The code above will be translated in a AST tree after the parse phase:
  
- ```c
+ ```
  <MainNode>
 	<SequenceNode>
 		<AssignmentNode> =
@@ -46,8 +44,8 @@ while (!(i > 7)) {
 						<IfNode> if
 							<BracketNode> ()
 								<GreaterNode> >
-									<VariableNode> j
-									<IntNode> 20
+									<VariableNode> i
+									<IntNode> 8
 							<BlockNode> {}
 								<AssignmentNode> =
 									<VariableNode> j
@@ -55,16 +53,12 @@ while (!(i > 7)) {
 										<VariableNode> j
 										<VariableNode> k
 							<BlockNode> {}
-								<AssignmentNode> =
-									<VariableNode> j
-									<PlusNode> +
-										<VariableNode> j
-										<IntNode> 1
 						<AssignmentNode> =
 							<VariableNode> i
 							<PlusNode> +
 								<VariableNode> i
 								<IntNode> 1
+
  ```
 # Interpret Phase
 The AST thre will be interpreted 
