@@ -21,7 +21,7 @@ while (!(i > 7)) {
 	i = i + 1;
 }
   ``` 
-  
+ # Parse Phase
  The code above will be translated in a AST tree after the parse phase:
  
  ```c
@@ -66,3 +66,5 @@ while (!(i > 7)) {
 								<VariableNode> i
 								<IntNode> 1
  ```
+# Interpret Phase
+The AST thre will be interpreted 
